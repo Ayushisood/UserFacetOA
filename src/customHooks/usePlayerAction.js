@@ -30,7 +30,7 @@ const resetPlayerState = useCallback(() => {
     collided: false,
   });
   setCurrentWord(newWord[0].join(''));
-}, []);
+}, [setCurrentWord]);
 
   return [playerState, updatePlayerPos, resetPlayerState];
 };

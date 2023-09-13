@@ -12,7 +12,7 @@ export const Navbar = ({score}) => {
   useEffect(() => {
     if (window.innerWidth <= 768) setIsMobile(true);
     else setIsMobile(false);
-  }, [window.innerWidth]);
+  }, []);
   return (
     <>
       {!isMobile ? (
